@@ -1,0 +1,8 @@
+<form>
+  <div class="input-group-append">  
+    <input class="form-control" placeholder="AAAA-MM-DD" name="dp" [(ngModel)]="model" ngbDatepicker #d="ngbDatepicker">
+    <button class="btn btn-outline-secondary" (click)="d.toggle()" type="button">
+    <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+  </button>
+  </div>
+</form>

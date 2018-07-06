@@ -1,0 +1,88 @@
+<form>
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group col-md-6">
+                <label for="identificacion">Número identificación</label>
+                <input type="text" class="form-control" id="identificacionInput" placeholder="Número identificación">
+              </div>  
+        </div> 
+    </div>
+    <div class="form-row">
+      <div class="col">
+          <div class="form-group col-md-12">
+              <label for="nombres">Nombres</label>
+              <input type="text" class="form-control" id="nombresInput" placeholder="Nombres">
+            </div>  
+      </div> 
+      <div class="col">
+          <div class="form-group col-md-12">
+              <label for="apellidos">Apellidos</label>
+              <input type="text" class="form-control" id="apellidosInput" placeholder="Apellidos">
+          </div>
+      </div>
+    </div>
+    <div class="form-row">
+        <div class="col">
+            <div class="form-group col-md-12">
+              <label for="fechaNacimiento">Ciudad de nacimiento</label>
+              <app-ngbd-typeahead-format [entries]="myAwesomeArrayOfAwesomeStuff"></app-ngbd-typeahead-format>
+            </div>
+          </div>
+      <div class="col">
+          <div class="form-group col-md-12">
+            <label for="fechaNacimiento">Fecha de nacimiento</label>
+            <ngbd-datepicker-popup></ngbd-datepicker-popup>
+        </div>
+      </div>
+    </div>
+
+    <div class="form-row">
+        <div class="col">
+          <div class="form-group col-md-12">
+            <label for="genero">Género</label>
+            <select id="inputState" class="form-control">
+              <option selected>Seleccione...</option>
+              <option>Femenino</option>
+              <option>Masculino</option>
+            </select>
+          </div>
+        </div>  
+        <div class="col">
+            <div class="form-group col-md-12">
+              <label for="estadoCivil">Estado civil</label>
+              <select id="estadoCivilSelect" class="form-control">
+                <option selected>Seleccione...</option>
+                <option>Soltero(a)</option>
+                <option>Union libre</option>
+                <option>Casado(a)</option>
+                <option>Viudo(a)</option>
+              </select>
+            </div>
+          </div>
+      </div>     
+
+
+
+      <div class="form-row">
+          <div class="col">
+            <div class="form-group col-md-12">
+              <label for="eps">EPS</label>
+              <app-ngbd-typeahead-format [entries]="EPSList"></app-ngbd-typeahead-format>
+            </div>
+          </div>  
+          <div class="col">
+              <div class="form-group col-md-12">
+                <label for="cotizante">Cotizante</label>
+                <select id="cotizanteSelect" class="form-control">
+                  <option selected>Seleccione...</option>
+                  <option>Cotizante</option>
+                  <option>Beneficiario</option>
+                  <option>Otro</option>
+                </select>
+              </div>
+            </div>
+        </div>     
+  
+    
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
